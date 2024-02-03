@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Shopping Website</title>
+  <link href="../style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <header class="list-container">
+    <h2 class="list-content">Shopping List<div id="listContainer"></div></h2>
+  </header>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <ul class="col-sm-3 list-group">
+        <li class="list-group-item"><a href="../products/category1.html">Food</a></li>
+        <li class="list-group-item"><a href="../products/category2.html">Clothes</a></li>
+        <li class="list-group-item"><a href="#">Stationary</a></li>
+      </ul>
+      <div id="category1" class="col-sm-9">
+        <div class="container mt-4">
+          <div class="row">
+            <ul class="breadcrumb">
+              <li><a href="../home.html" onclick="showContent('Home')">Home</a></li>
+              <li><a href="#">Stationary</a></li>
+            </ul>
+            <div class="col-sm-4">
+              <a href="category3/product9.html"><img alt="image not found" src="img/pen.jpg" /></a>
+              <a href="category3/product9.html"><h2>
+                Pen
+              </h2></a>
+              <p>
+                $4.99
+              </p>
+              <button type="button" class="btn btn-success" onclick="addToList('Pen', 4.99)">Add to
+                List</button>
+            </div>
+            <div class="col-sm-4">
+              <a href="category3/product10.html"><img alt="image not found" src="img/pencil.jpg" /></a>
+              <a href="category3/product10.html"><h2>
+                Pencil
+              </h2></a>
+              <p>
+                $3.99
+              </p>
+              <button type="button" class="btn btn-success" onclick="addToList('Pencil', 3.99)">Add to
+                List</button>
+            </div>
+            <div class="col-sm-4">
+              <a href="category3/product11.html"><img alt="image not found" src="img/ruler.jpg" /></a>
+              <a href="category3/product11.html"><h2>
+                Ruler
+              </h2></a>
+              <p>
+                $5.99
+              </p>
+              <button type="button" class="btn btn-success" onclick="addToList('Ruler', 5.99)">Add to
+                List</button>
+            </div>
+            <div class="col-sm-4">
+              <a href="category3/product12.html"><img alt="image not found" src="img/eraser.jpg" /></a>
+              <a href="category3/product12.html"><h2>
+                Eraser
+              </h2></a>
+              <p>
+                $6.99
+              </p>
+              <button type="button" class="btn btn-success" onclick="addToList('Eraser', 6.99)">Add to
+                List</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../myscript.js"></script>
+</body>
+
+</html>

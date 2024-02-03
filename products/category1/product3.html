@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Website</title>
+    <link href="../../style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header class="list-container">
+        <h2 class="list-content">Shopping List<div id="listContainer"></div></h2>
+      </header>
+    
+      <div class="container-fluid text-center">
+        <div class="row content">
+          <ul class="col-sm-3 list-group">
+            <li class="list-group-item"><a href="../category1.html">Food</a></li>
+            <li class="list-group-item"><a href="../category2.html">Clothes</a></li>
+            <li class="list-group-item"><a href="../category3.html">Stationery</a></li>
+          </ul>
+          <div id="category1" class="col-sm-9">
+            <div class="container mt-4">
+              <div class="row">
+                <ul class="breadcrumb">
+                  <li><a href="../../home.html" onclick="showContent('Home')">Home</a></li>
+                  <li><a href="../category1.html">Food</a></li>
+                  <li><a href="#">Orange</a></li>
+                </ul>
+                <div class="col-sm-6">
+                  <img class="product" alt="image not found" src="../img/orange.jpg" /></div>
+              <div class="col-sm-6"><h2>
+                    Orange
+                  </h2>
+                  <p>
+                    Orange, any of several species of small trees or shrubs of the genus Citrus of the family Rutaceae and their nearly round fruits, which have leathery and oily rinds and edible, juicy inner flesh. A number of species and varieties of orange are economically important, namely the China orange, also called the sweet, or common, orange (Citrus ×sinensis); the mandarin orange (C. reticulata), some varieties of which are called tangerines; and the sour, or Seville, orange (C. ×aurantium), which is less extensively grown. Common varieties of the sweet orange include the Jaffa, from Israel, the seedless navel, and the Maltese, or blood, orange.                  </p>
+                  <p>
+                    $4.99
+                  </p>
+                  <button type="button" class="btn btn-success" onclick="addToList('Orange', 4.99)">Add to
+                    List</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../../myscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Website</title>
+    <link href="../../style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header class="list-container">
+        <h2 class="list-content">Shopping List<div id="listContainer"></div></h2>
+      </header>
+    
+      <div class="container-fluid text-center">
+        <div class="row content">
+          <ul class="col-sm-3 list-group">
+            <li class="list-group-item"><a href="../category1.html">Food</a></li>
+            <li class="list-group-item"><a href="../category2.html">Clothes</a></li>
+            <li class="list-group-item"><a href="../category3.html">Stationery</a></li>
+          </ul>
+          <div id="category1" class="col-sm-9">
+            <div class="container mt-4">
+              <div class="row">
+                <ul class="breadcrumb">
+                  <li><a href="../../home.html" onclick="showContent('Home')">Home</a></li>
+                  <li><a href="../category1.html">Food</a></li>
+                  <li><a href="#">Banana</a></li>
+                </ul>
+                <div class="col-sm-6">
+                  <img class="product" alt="image not found" src="../img/Banana.jpg" /></div>
+              <div class="col-sm-6"><h2>
+                    Banana
+                  </h2>
+                  <p>
+                    Banana, fruit of the genus Musa, of the family Musaceae, one of the most important fruit crops of the world. The banana is grown in the tropics, and, though it is most widely consumed in those regions, it is valued worldwide for its flavour, nutritional value, and availability throughout the year. Cavendish, or dessert, bananas are most commonly eaten fresh, though they may be fried or mashed and chilled in pies or puddings. They may also be used to flavour muffins, cakes, or breads. Cooking varieties, or plantains, are starchy rather than sweet and are grown extensively as a staple food source in tropical regions; they are cooked when ripe or immature. A ripe fruit contains as much as 22 percent of carbohydrate and is high in dietary fibre, potassium, manganese, and vitamins B6 and C.
+                  </p>
+                  <p>
+                    $4.99
+                  </p>
+                  <button type="button" class="btn btn-success" onclick="addToList('Banana', 4.99)">Add to
+                    List</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../../myscript.js"></script>
+</body>
+
+</html>
